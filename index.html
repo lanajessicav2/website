@@ -1,18 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Arkose Labs Enforcement</title>
+
+  <script src="https://arkoselabs.roblox.com/v2/476068BF-9607-4799-B53D-966BE98E2B81/api.js"
+          async defer
+          data-callback="setupEnforcement">
+  </script>
+
+  <script src="api.js"></script>
+
   <script>
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.async = true;
-    script.defer = true;
-    script.src = 'https://arkoselabs.roblox.com/v2/' + '476068BF-9607-4799-B53D-966BE98E2B81' + '/api.js';
-    script.setAttribute('data-callback', 'setupEnforcement');
-
-    document.getElementsByTagName('head')[0].appendChild(script);
-
     function setupEnforcement(myEnforcement) {
       myEnforcement.setConfig({
         selector: '#logger',
